@@ -13,6 +13,7 @@ show learning progress and real-world system evolution.
 | Version | What You Build |
 |--------|----------------|
 | v1     | Basic CRUD (Employee table + add, update, delete, get) |
+| v2     | Departments + Relations |
 
 ---
 
@@ -45,4 +46,26 @@ To keep v1 simple and focused, the following are **intentionally excluded**:
 These will be introduced gradually in later versions.
 
 ### Folder Structure (v1)
+
+---
+
+## v2 – Departments + Relations
+
+### Objective
+Extend the basic employee system by introducing departments and creating
+a relational structure between employees and departments.
+
+### What is implemented
+- `departments` master table
+- `dept_id` column added to `employees`
+- Foreign key relationship between employees and departments
+- Sample department data
+- Validation using join-based test queries
+
+### Status
+✔️ Completed  
+✔️ Tested  
+✔️ Locked  
+
+Next version: **v3 – Triggers + Audit + Validation**
 
