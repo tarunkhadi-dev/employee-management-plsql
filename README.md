@@ -14,6 +14,8 @@ show learning progress and real-world system evolution.
 |--------|----------------|
 | v1     | Basic CRUD (Employee table + add, update, delete, get) |
 | v2     | Departments + Relations |
+| v3     | Triggers + Audit + Validation |
+
 
 ---
 
@@ -68,4 +70,27 @@ a relational structure between employees and departments.
 ✔️ Locked  
 
 Next version: **v3 – Triggers + Audit + Validation**
+
+---
+
+## v3 – Triggers + Audit + Validation
+
+### Objective
+Introduce audit logging, data validation, and controlled updates
+using database triggers.
+
+### What is implemented
+- `employee_audit` table
+- Triggers for INSERT, UPDATE, DELETE auditing
+- Salary validation using BEFORE trigger
+- Test cases to validate audit and validation logic
+
+### Status
+✔️ Completed  
+✔️ Tested  
+✔️ Locked  
+
+Next version: **v4 – Packages & Modularization**
+
+
 
