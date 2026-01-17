@@ -15,6 +15,8 @@ show learning progress and real-world system evolution.
 | v1     | Basic CRUD (Employee table + add, update, delete, get) |
 | v2     | Departments + Relations |
 | v3     | Triggers + Audit + Validation |
+| v4     | Packages & Modularization |
+
 
 
 ---
@@ -91,6 +93,28 @@ using database triggers.
 ✔️ Locked  
 
 Next version: **v4 – Packages & Modularization**
+---
+
+## v4 – Packages & Modularization
+
+### Objective
+Refactor standalone procedures into a structured PL/SQL package
+to improve encapsulation, maintainability, and API clarity.
+
+### What is implemented
+- `emp_pkg` package (specification & body)
+- Centralized CRUD logic inside package
+- Public API via package specification
+- Package-based test script
+
+### Status
+✔️ Completed  
+✔️ Tested  
+✔️ Locked  
+
+Next version: **v5 – Advanced Validation & Exception Handling**
+
+
 
 
 
