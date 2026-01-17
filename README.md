@@ -93,6 +93,7 @@ using database triggers.
 ✔️ Locked  
 
 Next version: **v4 – Packages & Modularization**
+
 ---
 
 ## v4 – Packages & Modularization
@@ -113,6 +114,7 @@ to improve encapsulation, maintainability, and API clarity.
 ✔️ Locked  
 
 Next version: **v5 – Advanced Validation & Exception Handling**
+
 
 
 
