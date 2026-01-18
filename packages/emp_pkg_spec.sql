@@ -1,7 +1,7 @@
 -- Project : Employee Management System
--- Version : v4 (Packages & Modularization)
+-- Version : v5 (Advanced Validation & Exception Handling)
 -- File    : emp_pkg_spec.sql
--- Purpose : Public interface for employee operations
+-- Purpose : Public interface for employee operations with custom exceptions
 
 CREATE OR REPLACE PACKAGE emp_pkg AS
 
@@ -24,6 +24,11 @@ CREATE OR REPLACE PACKAGE emp_pkg AS
     p_emp_id IN employees.emp_id%TYPE,
     p_cursor OUT SYS_REFCURSOR
   );
+
+  -- Custom Exceptions
+  e_employee_not_found EXCEPTION;
+  e_invalid_department EXCEPTION;
+  e_invalid_salary     EXCEPTION;
 
 END emp_pkg;
 /
