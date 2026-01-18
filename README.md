@@ -16,6 +16,8 @@ show learning progress and real-world system evolution.
 | v2     | Departments + Relations |
 | v3     | Triggers + Audit + Validation |
 | v4     | Packages & Modularization |
+| v5     | Validation & Exception Handling |
+
 
 
 
@@ -114,6 +116,35 @@ to improve encapsulation, maintainability, and API clarity.
 ✔️ Locked  
 
 Next version: **v5 – Advanced Validation & Exception Handling**
+
+---
+
+## v5 – Validation & Exception Handling
+
+### Objective
+Introduce business-rule validation and controlled exception handling
+to make the system production-safe and predictable.
+
+### What is implemented
+- Salary validation (no negative values)
+- Department existence checks
+- Custom application errors using `RAISE_APPLICATION_ERROR`
+- Layered validation with constraints, triggers, and package logic
+- Dedicated validation test script
+
+### Notes
+Some validations are enforced by database constraints and triggers
+(v2 & v3), which may raise errors before package-level exceptions.
+This layered approach reflects real enterprise systems.
+
+### Status
+✔️ Completed  
+✔️ Tested Locally  
+✔️ Locked  
+
+Next version: **v6 – Security & Role-Based Access Control**
+
+
 
 
 
